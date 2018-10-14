@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabularTextSorter", "TabularTextSorter\TabularTextSorter.csproj", "{2B9D7C26-C4DA-4473-B61D-88890B525265}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabularTextSorterTests", "TabularTextSorterTests\TabularTextSorterTests.csproj", "{907D6A32-07CF-4CAA-9E65-11B273A94F43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2B9D7C26-C4DA-4473-B61D-88890B525265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B9D7C26-C4DA-4473-B61D-88890B525265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B9D7C26-C4DA-4473-B61D-88890B525265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{907D6A32-07CF-4CAA-9E65-11B273A94F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907D6A32-07CF-4CAA-9E65-11B273A94F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907D6A32-07CF-4CAA-9E65-11B273A94F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907D6A32-07CF-4CAA-9E65-11B273A94F43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
