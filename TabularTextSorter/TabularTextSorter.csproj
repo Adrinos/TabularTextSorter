@@ -53,7 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CsvHelper.cs" />
-    <Compile Include="CsvHelper2.cs" />
     <Compile Include="ExcelData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
