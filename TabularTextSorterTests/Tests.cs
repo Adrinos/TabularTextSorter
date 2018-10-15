@@ -1,4 +1,5 @@
-﻿using TabularTextSorter;
+﻿using System.Linq;
+using TabularTextSorter;
 using Xunit;
 
 namespace TabularTextSorterTests
@@ -10,15 +11,35 @@ namespace TabularTextSorterTests
         {
             var sut = new CsvHelper();
             var inputPath =
-                "C:\\Users\\Gareth\\source\\repos\\TabularTextSorter\\TabularTextSorter\\bin\\Debug\\Test1-sorted-Col0.csv";
+                "Data/TestFile.csv";
             var outputPath =
-                "C:\\Users\\Gareth\\source\\repos\\TabularTextSorter\\TabularTextSorter\\bin\\Debug\\Test1.csv";
+                "Data/TestFileOutput.csv";
             var delimiter = ",";
             var headerRecord = true;
             var sortRow = 0;
             var type = typeof(string);
 
-            var records = sut.GetRecords(inputPath, delimiter, headerRecord);
+            var records = sut.ParseData(inputPath, delimiter, headerRecord).ToList();
+
+            var sortedRecords = sut.SortRecords(records, sortRow, type);
+
+            //sut.WriteRecords(sortedRecords, outputPath);
+        }
+
+        [Fact]
+        public void Read2()
+        {
+            var sut = new CsvHelper2();
+            var inputPath =
+                "Data/TestFile.csv";
+            var outputPath =
+                "Data/TestFileOutput.csv";
+            var delimiter = ",";
+            var headerRecord = true;
+            var sortRow = 0;
+            var type = typeof(string);
+
+            var records = sut.ParseData(inputPath, delimiter, headerRecord).ToList();
 
             var sortedRecords = sut.SortRecords(records, sortRow, type);
 
